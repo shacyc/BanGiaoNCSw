@@ -1,0 +1,29 @@
+UPDATE sams.EDU_GRCREQUEST 
+  SET JHSGRADUATERANKID = 3,
+      updateduser = 'administrator',updateddate = sysdate
+--SELECT * 
+--  FROM sams.EDU_GRCREQUEST 
+  WHERE isactive = 1 AND isdeleted = 0 AND JHSGRADUATERANKID  IS NULL AND schoolyearid = 21 AND schoolid = 28030103  AND
+  pupilid IN (
+ '011363007',
+'011363065',
+'011363077',
+'011363164',
+'011363472',
+'011363493',
+'011363519',
+'011363558',
+'011029544',
+'011371818',
+'011371814',
+'011363804',
+'011363807',
+'011363856',
+'011363879',
+'011814389',
+'011363891',
+'011448866',
+'011363883'
+  )
+
+   ;

@@ -1,0 +1,60 @@
+INSERT
+  	INTO sams.EDU_PUPIL_STUDYTIMELINE
+  	(
+  --		STUDYTimeLINEID,
+  		PUPILID,
+  		SCHOOLID,
+  		SCHOOLCLASSID,
+  		SCHOOLYearID,
+  		SCHOOLTermID,
+  		RegisterBOOKNumber,
+  		StartSTUDYDate,
+  		ENDSTUDYDate,
+  		CurrentPUPILStatusID,
+  		MoveToSCHOOLID,
+  		MoveToSCHOOLCLASSID,
+  		MoveToSTUDYTimeLINEID,
+  		MoveType,
+  		MoveDate,
+  		MoveToRequestID,
+  		Note,
+  		OrderIndex,
+  		IsActive,
+  		IsSystem,
+  		CreatedUser,
+  		CreatedDate, 
+      MOVESCHOOLSTATUS,
+      MOVESCHOOLCLASSSTATUS,
+      FROMREQUESTID,
+      TOREQUESTID
+  	)
+  	SELECT
+  	
+  --		v_STUDYTimeLINEID,
+  		PUPILID,
+  		10060031,
+  		-1,
+  		24,
+  		1,
+  		RegisterBOOKNumber,
+  		NULL,
+  		NULL,
+  		1,
+  		0,
+  		0,
+  		NULL,
+  		0,
+  		NULL,
+  		NULL,
+  		'Phát sinh tu nghiep vu xac nhan G10',
+  		orderindex,
+  		IsActive,
+  		IsSystem,
+  		'administrator',
+  		SYSDATE,    
+      0,
+      0,
+      NULL,-------------------
+      NULL
+  	FROM sams.edu_pupil_studytimeline eps
+    WHERE studytimelineid = '78CE324533CA35F4E0540010E0B33240';
